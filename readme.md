@@ -29,3 +29,45 @@ But it is good style to use the factored import statement.
 
 Run in terminal: go run import_types
 
+
+3) Functions
+----------
+
+A function can take zero or more arguments.In given example, add takes two parameters of type int.
+ (For more about why types look the way they do, see the article on Go's declaration syntax.)
+Run in terminal: go run create_function
+Declaring function in go
+
+Run in terminal: go run create_function
+
+
+4) Variables with initializers
+------------------------------
+A var declaration can include initializers, one per variable.
+If an initializer is present, the type can be omitted; the variable will take the type of the initializer.
+Inside a function, the := short assignment statement can be used in place of a var declaration with implicit type.Outside a function, every statement begins with a keyword (var, func, and so on) and so the := construct is not available.
+
+Go's basic types are
+bool
+
+string
+
+int  int8  int16  int32  int64
+uint uint8 uint16 uint32 uint64 uintptr
+
+byte // alias for uint8
+
+rune // alias for int32
+     // represents a Unicode code point
+
+float32 float64
+
+complex64 complex128
+The example shows variables of several types, and also that variable declarations may be "factored" into blocks, as with import statements.
+The int, uint, and uintptr types are usually 32 bits wide on 32-bit systems and 64 bits wide on 64-bit systems. When you need an integer value you should use int unless you have a specific reason to use a sized or unsigned integer type.
+
+Run in terminal: go run declare_variables
+
+
+
+
