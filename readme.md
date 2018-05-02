@@ -1,3 +1,7 @@
+
+Go Language Basics explanations and related example programs.
+===============================================================
+
 1. Packages
 -----------
 Every Go program is made up of packages. Programs start running in package main.
@@ -10,8 +14,8 @@ Note: the environment in which these programs are executed is deterministic, so 
 In this will return the same number. (To see a different number, seed the number generator; see rand.Seed. Time is constant in the playground,
 so you will need to use something else as the seed.)
 
-Example run below line in terminal.
-go run packages_efine
+Run in terminal: go run packages_efine
+
 
 2. Imports
 ----------
@@ -22,4 +26,6 @@ import "fmt"
 import "math"
 
 But it is good style to use the factored import statement.
+
+Run in terminal: go run import_types
 
