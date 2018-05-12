@@ -102,3 +102,18 @@ Run in terminal as: go run variables_constants
 
 
 
+Declaring variables and constants in go lang
+
+
+
+
+// goroutines
+--------------
+A goroutine is a lightweight thread managed by the Go runtime. 
+
+See the example program goroutines.go 
+In that example say() function we calling in two way.
+1) Function direct call
+2) Function calling with go keyword(It will work like thread)
+
+Run in Terminal as:  go run goroutines.go
