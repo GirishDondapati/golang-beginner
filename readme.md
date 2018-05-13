@@ -105,6 +105,32 @@ Run in terminal as: go run variables_constants
 Declaring variables and constants in go lang
 
 
+Arrays, Slices and Maps:
+------------------------
+
+Arrays:
+
+	An array is a numbered sequence of elements of a single
+type with a fixed length. In Go Array look like this:
+
+		Ex: var x [5]int
+Here: x is an example of an array which is composed of 5 int’s.
+
+Slices:
+	A slice is a segment of an array. Like arrays slices are indexable and have a length. Unlike arrays this length is allowed to change. Here's an example of a slice:
+
+		Ex: var x []float64
+
+	The only difference between this and an array is the missing length between the brackets. In this case x has been created with a length of 0. 
+Slice have some built in functions. Like x := make([]float64, 5)  here make is built in function.
+
+Maps: 
+	
+	A map is an unordered collection of key-value pairs. Also known as an associative array, a hash table or a dictionary, maps are used to look up a value by its associated key. Here's an example of a map in Go: 
+
+		Ex: var x map[string]int
+	
+	The map type is represented by the keyword map, followed by the key type in brackets and finally the value type. If you were to read this out loud you would say “x is a map of strings to ints.” 
 
 
 // goroutines
